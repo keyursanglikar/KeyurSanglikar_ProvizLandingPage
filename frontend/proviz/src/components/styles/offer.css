@@ -1,0 +1,191 @@
+.program-body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.program-body .program-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.program-body .program-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  background-color: #91c5fd;
+  border-radius: 8px;
+  border: 3px solid rgba(21, 94, 240, 0.879);
+  box-shadow: 6px 6px 6px rgba(0, 102, 255, 0.65);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.program-body .header-images {
+  display: flex;
+  align-items: center;
+}
+
+.program-body .header-image-left,
+.program-body .header-image-right {
+  width: 100px;
+  height: auto;
+  margin: 0 20px;
+  box-shadow: 6px 6px 6px rgba(0, 102, 255, 0.65);
+}
+
+.program-body .header-text {
+  text-align: center;
+}
+
+.program-body h1 {
+  font-size: 2rem;
+  color: #3d3aff;
+  margin-bottom: 10px;
+}
+
+.program-body p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.program-body .program-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid blue;
+  box-shadow: 6px 6px 6px rgba(0, 102, 255, 0.65);
+  flex-wrap: wrap;
+}
+
+.program-body .program-details {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 250px;
+}
+
+.program-body .program-details h2 {
+  font-size: 1.5rem;
+  color: #1a73e8;
+  margin-top: 20px;
+}
+
+.program-body .program-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.program-body .program-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+.program-body .program-details li {
+  margin-bottom: 10px;
+}
+
+.program-body .program-image {
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+.program-body .program-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  box-shadow: 0px 10px 6px rgba(20, 111, 247, 0.75);
+}
+
+.program-body .program-enrollment {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.program-body .program-enrollment p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.program-body #enroll-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.program-body #enroll-button:hover {
+  background-color: #0057b8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .program-body .program-header {
+      padding: 15px;
+  }
+
+  .program-body h1 {
+      font-size: 1.8rem;
+  }
+
+  .program-body .program-content {
+      flex-direction: column;
+  }
+
+  .program-body .program-details {
+      margin-right: 0;
+  }
+
+  .program-body .program-image img {
+      width: 100%;
+      max-width: 300px;
+  }
+
+  .program-body .program-enrollment p {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .program-body .program-header {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .program-body h1 {
+      font-size: 1.5rem;
+  }
+
+  .program-body .program-content {
+      padding: 15px;
+  }
+
+  .program-body .program-details h2 {
+      font-size: 1.2rem;
+  }
+
+  .program-body .program-details p {
+      font-size: 0.9rem;
+  }
+
+  .program-body .program-enrollment p {
+      font-size: 1rem;
+  }
+
+  #enroll-button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+  }
+}

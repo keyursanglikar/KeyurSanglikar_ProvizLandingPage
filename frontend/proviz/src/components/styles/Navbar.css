@@ -1,0 +1,161 @@
+/* Base Light Mode Styles */
+.navContainer {
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navContainer .navbar {
+    width: 100%;
+    position: relative; 
+    background-color: transparent;
+    padding: 10px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 248, 255);
+}
+
+.navContainer .navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navContainer .navbar li {
+    margin: 0 15px;
+}
+
+.navContainer .navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    background-color: #190239;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.navContainer .navbar a:hover {
+    background-color: #0066ff;
+    color: #ffffff;  
+    font-size: 20px;
+}
+
+/* Optional: Active link style */
+.navContainer .navbar a.active {
+    color: #00bcd4;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+/* Mobile responsiveness (small screens) */
+@media (max-width: 576px) {
+    .navContainer .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navContainer .navbar li {
+        margin: 10px 0;
+    }
+
+    .navContainer .navbar a {
+        font-size: 16px; /* Smaller font for mobile */
+        padding: 8px 15px;
+    }
+}
+
+/* Tablet responsiveness (medium screens) */
+@media (max-width: 768px) {
+    .navContainer .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navContainer .navbar li {
+        margin: 10px 0;
+    }
+
+    .navContainer .navbar a {
+        font-size: 16px; /* Adjusted for tablets */
+        padding: 8px 15px;
+    }
+}
+
+/* Larger screen (small desktop and above) */
+@media (min-width: 992px) {
+    .navContainer .navbar a {
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode .navbar {
+    background-color: transparent;
+    color: white;
+}
+
+body.dark-mode .navbar a {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+body.dark-mode .navbar a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+body.dark-mode .navbar a.active {
+    color: #00bcd4;
+}
+
+/* Dark Mode Button Styles */
+.theme-toggle-btn {
+    font-size: 18px;
+    background-color: transparent;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-left: 20px;
+    color: rgb(240, 248, 255);
+}
+
+body.dark-mode .theme-toggle-btn {
+    color: #ffffff;
+}
+
+body.dark-mode button {
+    background-color: #ffffff;
+    color: rgb(7, 7, 7);
+}
+
+body.dark-mode button:hover {
+    background-color: #fff9f9;
+}
+
+/* Base Button Styles */
+button {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.8);
+}

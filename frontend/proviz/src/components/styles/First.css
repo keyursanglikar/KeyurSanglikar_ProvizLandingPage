@@ -1,0 +1,199 @@
+/* styles/First.css */
+
+/* Custom styles for the intro container */
+.intro-container {
+    background-color: transparent;
+    padding: 50px 0;
+    border-radius: 10px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.intro-container #background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+    z-index: -1;
+   
+  }
+
+/* Custom styles for headers inside intro-container */
+.intro-container .header-title,
+.intro-container .header-title2,
+.intro-container .header-title3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container .highlight-ai {
+    color: #05fffb;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Custom styles for header with button inside intro-container */
+.intro-container .header-title3 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container .explore-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d106f5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 120px;
+    margin-right: 580px;
+}
+
+/* Hover effect for the button inside intro-container */
+.intro-container .explore-btn:hover {
+    background-color: #000000;
+}
+
+/* Override Bootstrap styles inside intro-container */
+.intro-container .btn-success {
+    background-color: #af18bc;
+    border: none;
+}
+
+.intro-container .btn-success:hover {
+    background-color: #ff0000;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) { /* Large desktops */
+    .intro-container {
+        padding: 40px 0;
+        margin-top: 100px;
+    }
+    .intro-container .explore-btn {
+        margin-right: 400px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 992px) { /* Medium desktops and laptops */
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 34px;
+    }
+    .intro-container .explore-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-right: 200px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .intro-container {
+        padding: 30px 0;
+        height: auto;
+    }
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 28px;
+    }
+    .intro-container .explore-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-right: 280px; /* Center the button on smaller screens */
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 576px) { /* Small tablets and large smartphones */
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 24px;
+    }
+    .intro-container .explore-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: 50px;
+        margin-right: 90px;
+    }
+}
+
+@media (max-width: 480px ) { /* Small devices (portrait phones) */
+    .intro-container {
+        padding: 20px 0;
+    }
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 20px;
+    }
+    .intro-container .explore-btn {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-top: 100px;
+        margin-right: 120px;
+        
+    }
+}
+
+@media (max-width: 375px ) { /* Small devices (portrait phones) */
+    .intro-container {
+        padding: 20px 0;
+    }
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 20px;
+    }
+    .intro-container .explore-btn {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-top: 100px;
+        margin-right: 90px;
+        
+    }
+}
+
+@media (max-width: 320px ) { /* Small devices (portrait phones) */
+    .intro-container {
+        padding: 20px 0;
+    }
+    .intro-container .header-title,
+    .intro-container .header-title2,
+    .intro-container .header-title3 {
+        font-size: 20px;
+    }
+    .intro-container .explore-btn {
+        font-size: 12px;
+        padding: 8px 14px;
+        margin-top: 100px;
+        margin-right: 70px;
+        
+    }
+}

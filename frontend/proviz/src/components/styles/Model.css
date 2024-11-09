@@ -1,0 +1,74 @@
+/* Modal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 90%; /* Ensures responsiveness on smaller screens */
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styling */
+#close-button {
+  position: absolute;
+  top: 10px; 
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#close-button:hover {
+  color: #ff0000; /* Adds a color change on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Tablets and below */
+  .modal-content {
+      max-width: 80%;
+      padding: 15px;
+  }
+  #close-button {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) { /* Large smartphones */
+  .modal-content {
+      max-width: 90%;
+      padding: 10px;
+  }
+  #close-button {
+      font-size: 14px;
+      top: 8px;
+      right: 8px;
+  }
+}
+
+@media (max-width: 480px) { /* Small devices (portrait phones) */
+  .modal-content {
+      max-width: 95%;
+      padding: 8px;
+  }
+  #close-button {
+      font-size: 14px;
+  }
+}
